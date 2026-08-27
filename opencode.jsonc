@@ -1,0 +1,8 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    // plan-handoff plugin: build's default wildcard allow rule would silently
+    // approve the plan_handoff tool's ctx.ask(); this pins it back to a dialog.
+    "plan_handoff": "ask"
+  }
+}
